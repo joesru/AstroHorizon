@@ -1,0 +1,29 @@
+name: lidar-stellarium
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pdal
+  - python-pdal
+  - rasterio
+  - laspy
+  - pyproj
+  - pandas
+  - numpy
+  - pyyaml
+  - openpyxl
+  - matplotlib
+  - shapely
+  - geopandas
+  - fiona
+  - gdal
+  - scikit-learn
+  - scipy
+  - skyfield
+  - sgp4
+  - folium
+  - tqdm
+  - rich
+  - pip:
+    - et-xmlfile==2.0.0

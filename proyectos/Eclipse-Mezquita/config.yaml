@@ -1,0 +1,24 @@
+project:
+  landscape_name: Eclipse-Mezquita
+observer:
+  x: 344037.08
+  y: 4193797.72
+  ground_z: 98.683
+  camera_height: 1.6
+target:
+  x: 343430.965
+  y: 4193943.647
+  z: 161.849
+raster:
+  radius_m: 1000
+photography:
+  camera_body: Nikon D3400 (DX / APS-C)
+  lens_used: Nikon AF-P DX NIKKOR 70-300mm f/4.5-6.3G
+  focal_length_mm: 250.0
+  aperture: f/8
+  orientation: Vertical
+  fov_horizontal_deg: 3.5741
+  fov_vertical_deg: 5.3818
+  sensor_active_width_mm: 15.6
+  sensor_active_height_mm: 23.5
+  fixed_camera_azimuth: 283.5

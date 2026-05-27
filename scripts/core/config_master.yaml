@@ -1,0 +1,33 @@
+author: Jose Estepa Ruiz
+crs: EPSG:25830
+raster:
+  resolution_m: 0.25
+  nodata: -9999
+  exclude_classes:
+  - 7
+  - 12
+  - 18
+  building_classes:
+  - 6
+  - 65
+  - 71
+  - 72
+  - 73
+  - 74
+  - 75
+  vegetation_classes:
+  - 3
+  - 4
+  - 5
+stellarium:
+  polygonal_angle_rotatez: 1.0e-05
+  atmospheric_extinction_coefficient: 0.27
+  atmospheric_temperature: 30
+  atmospheric_pressure: 1005
+  light_pollution: 5
+skyline:
+  min_distance_m: 2
+  distance_step_m: 0.1
+  default_azimuth_step_deg: 0.005
+  target_fine_window_deg: 5.0
+  target_fine_step_deg: 0.001

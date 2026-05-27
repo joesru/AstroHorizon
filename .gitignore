@@ -1,0 +1,39 @@
+# --- AstroHorizon .gitignore ---
+
+# Archivos de sistema y Python
+.git/
+.vscode/
+__pycache__/
+*.pyc
+*.log
+*.log.txt
+
+# Ignorar TODOS los LAZ por defecto...
+data_raw/laz/*
+
+# ...EXCEPTO los 10 específicos del ejemplo Eclipse-Mezquita
+!data_raw/laz/PNOA_2024_AND_343-4193_H30_NPC01.copc.laz
+!data_raw/laz/PNOA_2024_AND_343-4193_H30_NPC01.laz
+!data_raw/laz/PNOA_2024_AND_343-4194_H30_NPC01.laz
+!data_raw/laz/PNOA_2024_AND_343-4195_H30_NPC01.laz
+!data_raw/laz/PNOA_2024_AND_344-4193_H30_NPC01.laz
+!data_raw/laz/PNOA_2024_AND_344-4194_H30_NPC01.laz
+!data_raw/laz/PNOA_2024_AND_344-4195_H30_NPC01.laz
+!data_raw/laz/PNOA_2024_AND_345-4193_H30_NPC01.laz
+!data_raw/laz/PNOA_2024_AND_345-4194_H30_NPC01.laz
+!data_raw/laz/PNOA_2024_AND_345-4195_H30_NPC01.laz
+
+# Ignorar carpetas obsoletas
+scripts/legacy/
+proyectos/Legacy_Workspace/
+proyectos/Eclipse/
+
+# --- REGLAS PARA PROYECTOS (Eclipse-Mezquita) ---
+
+# Ignorar todo el contenido de la carpeta logs (los .yaml)...
+proyectos/*/logs/*
+# ...pero EXCEPTO el .gitkeep para que suba la carpeta vacía
+!proyectos/*/logs/.gitkeep
+
+# (Si tus .tif pesan MÁS de 100MB, quita el '#' de la siguiente línea para ignorarlos)
+# proyectos/*/workspace/dsm/*.tif

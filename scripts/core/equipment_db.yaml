@@ -1,0 +1,24 @@
+# equipment_db.yaml - Base de datos fotográfica
+sensors:
+  "Nikon D3400 (DX / APS-C)": 
+    width_mm: 23.5
+    height_mm: 15.6
+  "Full Frame (35mm)": 
+    width_mm: 36.0
+    height_mm: 24.0
+  "Micro Cuatro Tercios (M4/3)": 
+    width_mm: 17.3
+    height_mm: 13.0
+
+lenses:
+  "Nikon DX AF-S NIKKOR 35mm f/1.8G": 
+    type: "prime"
+    focal_mm: 35.0
+  "Nikon AF-P DX NIKKOR 18-55mm f/3.5-5.6G": 
+    type: "zoom"
+    min_focal_mm: 18.0
+    max_focal_mm: 55.0
+  "Nikon AF-P DX NIKKOR 70-300mm f/4.5-6.3G": 
+    type: "zoom"
+    min_focal_mm: 70.0
+    max_focal_mm: 300.0

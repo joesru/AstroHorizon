@@ -1,0 +1,91 @@
+{
+  "type": "FeatureCollection",
+  "name": "fov_cone_static",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::25830"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "tipo": "observador"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          344037.08,
+          4193797.72
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "tipo": "objetivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          343430.965,
+          4193943.647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "tipo": "linea_vision"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            344037.08,
+            4193797.72
+          ],
+          [
+            343430.965,
+            4193943.647
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "tipo": "cono_fov",
+        "fov_horizontal": 4.4668
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              344037.08,
+              4193797.72
+            ],
+            [
+              343303.47032360133,
+              4193944.3547897735
+            ],
+            [
+              343317.118693617,
+              4194001.043968555
+            ],
+            [
+              344037.08,
+              4193797.72
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

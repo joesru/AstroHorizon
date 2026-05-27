@@ -1,0 +1,76 @@
+[
+    {
+        "type": "readers.las",
+        "filename": "C:\\GIS\\LiDAR-Stellarium\\data_raw\\laz\\PNOA_2024_AND_343-4193_H30_NPC01.copc.laz",
+        "override_srs": "EPSG:25830"
+    },
+    {
+        "type": "readers.las",
+        "filename": "C:\\GIS\\LiDAR-Stellarium\\data_raw\\laz\\PNOA_2024_AND_343-4193_H30_NPC01.laz",
+        "override_srs": "EPSG:25830"
+    },
+    {
+        "type": "readers.las",
+        "filename": "C:\\GIS\\LiDAR-Stellarium\\data_raw\\laz\\PNOA_2024_AND_343-4194_H30_NPC01.laz",
+        "override_srs": "EPSG:25830"
+    },
+    {
+        "type": "readers.las",
+        "filename": "C:\\GIS\\LiDAR-Stellarium\\data_raw\\laz\\PNOA_2024_AND_343-4195_H30_NPC01.laz",
+        "override_srs": "EPSG:25830"
+    },
+    {
+        "type": "readers.las",
+        "filename": "C:\\GIS\\LiDAR-Stellarium\\data_raw\\laz\\PNOA_2024_AND_344-4193_H30_NPC01.laz",
+        "override_srs": "EPSG:25830"
+    },
+    {
+        "type": "readers.las",
+        "filename": "C:\\GIS\\LiDAR-Stellarium\\data_raw\\laz\\PNOA_2024_AND_344-4194_H30_NPC01.laz",
+        "override_srs": "EPSG:25830"
+    },
+    {
+        "type": "readers.las",
+        "filename": "C:\\GIS\\LiDAR-Stellarium\\data_raw\\laz\\PNOA_2024_AND_344-4195_H30_NPC01.laz",
+        "override_srs": "EPSG:25830"
+    },
+    {
+        "type": "readers.las",
+        "filename": "C:\\GIS\\LiDAR-Stellarium\\data_raw\\laz\\PNOA_2024_AND_345-4193_H30_NPC01.laz",
+        "override_srs": "EPSG:25830"
+    },
+    {
+        "type": "readers.las",
+        "filename": "C:\\GIS\\LiDAR-Stellarium\\data_raw\\laz\\PNOA_2024_AND_345-4194_H30_NPC01.laz",
+        "override_srs": "EPSG:25830"
+    },
+    {
+        "type": "readers.las",
+        "filename": "C:\\GIS\\LiDAR-Stellarium\\data_raw\\laz\\PNOA_2024_AND_345-4195_H30_NPC01.laz",
+        "override_srs": "EPSG:25830"
+    },
+    {
+        "type": "filters.merge"
+    },
+    {
+        "type": "filters.crop",
+        "point": "POINT(344037.08 4193797.72)",
+        "distance": 1000.0
+    },
+    {
+        "type": "filters.expression",
+        "expression": "Classification == 4"
+    },
+    {
+        "type": "writers.gdal",
+        "filename": "C:\\GIS\\LiDAR-Stellarium\\proyectos\\Eclipse-Mezquita\\workspace\\dsm\\dsm_vegetacion_media.tif",
+        "resolution": 0.5,
+        "dimension": "Z",
+        "output_type": "max",
+        "nodata": -9999,
+        "data_type": "float32",
+        "gdaldriver": "GTiff",
+        "gdalopts": "COMPRESS=DEFLATE,TILED=YES,BIGTIFF=IF_SAFER",
+        "bounds": "([343037.08, 345037.08], [4192797.72, 4194797.720000001])"
+    }
+]
