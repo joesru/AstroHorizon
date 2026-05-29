@@ -1,7 +1,7 @@
 author: Jose Estepa Ruiz
 crs: EPSG:25830
 raster:
-  resolution_m: 0.25
+  resolution_m: 0.5
   nodata: -9999
   exclude_classes:
   - 7
@@ -26,7 +26,7 @@ stellarium:
   atmospheric_pressure: 1005
   light_pollution: 5
 skyline:
-  min_distance_m: 2
+  min_distance_m: 25
   distance_step_m: 0.1
   default_azimuth_step_deg: 0.005
   target_fine_window_deg: 5.0

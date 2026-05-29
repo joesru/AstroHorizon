@@ -47,7 +47,7 @@ Para resolver este problema, el ecosistema automatiza dos entregables clave:
 | Datos PNOA | LiDAR 3ª cobertura | Ficheros `.laz` o `.copc.laz` del IGN |
 
 > **¿Por qué Miniforge y no pip?**
-> Las librerías geoespaciales pesadas (PDAL, GDAL, Rasterio) incluyen binarios nativos compilados con dependencias C/C++ que `pip` no resuelve bien en Windows. Conda-forge tiene builds pre-compilados y testeados para todas las plataformas. Es el camino sin dolor.
+> Las librerías geoespaciales pesadas (PDAL, GDAL, Rasterio) incluyen binarios nativos compilados con dependencias C/C++ que `pip` no resuelve bien en Windows. Conda-forge tiene builds pre-compilados y testeados para todas las plataformas.
 
 ---
 
@@ -60,11 +60,11 @@ Descarga el instalador desde [https://conda-forge.org/download/](https://conda-f
 ### 2.2 Clonar o descargar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/lidar-stellarium.git
-cd lidar-stellarium
+git clone [https://github.com/joesru/AstroHorizon.git](https://github.com/joesru/AstroHorizon.git)
+cd AstroHorizon
 ```
 
-O descarga el ZIP y descomprímelo en `C:\GIS\LiDAR-Stellarium\` (la ruta que usan los scripts internamente).
+O descarga el ZIP y descomprímelo en tu ordenador.
 
 ### 2.3 Crear el entorno conda
 
